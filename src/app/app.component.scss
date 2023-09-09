@@ -2,7 +2,6 @@
 
 .job-list-container{
   position: relative;
-  top: 150px;
   box-sizing: border-box;
   padding: 20px;
   display: flex;
@@ -11,4 +10,5 @@
   flex-wrap: nowrap;
   align-items: center;
   background-color: $light-grayish-cyan-background;
+  padding-top: 150px;
 }
