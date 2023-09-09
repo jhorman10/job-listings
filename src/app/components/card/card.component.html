@@ -1,0 +1,36 @@
+<div class="card-container">
+  <div class="card-container-part-1">
+    <img class="img-company-card" src="{{ cardData.logo }}" alt="" srcset="" />
+    <div class="container-company-description">
+      <div class="company-name">
+        <span class="company-name-title">{{ cardData.company }}</span
+        ><span class="company-name-new" *ngIf="cardData.new">NEW!</span
+        ><span class="company-name-featured" *ngIf="cardData.featured"
+          >FEATURED</span
+        >
+      </div>
+      <h2 class="company-job-title">{{ cardData.position }}</h2>
+      <div class="company-job-description">
+        <span class="company-job-description-span">{{ cardData.postedAt }}</span
+        ><span class="company-job-description-span">·</span
+        ><span class="company-job-description-span">{{
+          cardData.contract
+        }}</span
+        ><span class="company-job-description-span">·</span
+        ><span class="company-job-description-span">{{
+          cardData.location
+        }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-container-part-2">
+    <div class="container-tools-languages">
+      <span *ngFor="let tool of cardData.tools" class="tools-languages">{{
+        tool
+      }}</span>
+      <span *ngFor="let lang of cardData.languages" class="tools-languages"
+        >{{ lang }}
+      </span>
+    </div>
+  </div>
+</div>

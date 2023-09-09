@@ -1,0 +1,86 @@
+@import '../../../styles';
+
+.card-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 8px 20px 2px $desaturated-dark-cyan;
+}
+.card-container-part-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.img-company-card {
+  width: 100px;
+  height: 100px;
+}
+.container-company-description {
+}
+.company-name {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.company-name-title {
+  color: $desaturated-dark-cyan;
+}
+
+.company-name-new {
+  background-color: $desaturated-dark-cyan;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 15px;
+}
+.company-name-featured {
+  background-color: #141818;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 15px;
+}
+.company-job-title {
+  cursor: pointer;
+  &:hover {
+    color: #66bebe;
+  }
+}
+.company-job-description {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.company-job-description-span {
+  color: #b6bcbb;
+}
+.card-container-part-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.container-tools-languages {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.tools-languages {
+  background-color: #f1fafa;
+  padding: 7px;
+  color: $desaturated-dark-cyan;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $desaturated-dark-cyan;
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+  }
+}

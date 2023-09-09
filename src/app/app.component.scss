@@ -1,0 +1,8 @@
+@import '../styles';
+
+.job-list-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: $light-grayish-cyan-background;
+}
