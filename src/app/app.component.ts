@@ -9,12 +9,33 @@ import { JobListService } from './services/job-list.service';
 })
 export class AppComponent {
   jobListData: Card[] = [];
+  tools: string[] = ['Frontend', 'CSS', 'JavaScript'];
+  filter: string[] = [];
 
   constructor(private jobListService: JobListService) {}
 
   ngOnInit(): void {
-    this.jobListService.getJobListData().subscribe((data) => {
-      this.jobListData = data;
-    });
+    this.tools
+      ? this.jobListService
+          .searchCardsByTools(this.tools)
+          .subscribe((cards) => {
+            this.jobListData = cards;
+          })
+      : this.jobListService.getJobListData().subscribe((data) => {
+          this.jobListData = data;
+        });
+  }
+
+  removeFilterItem(filter: string[]) {
+    if (filter.length > 0) {
+      this.jobListService.searchCardsByTools(filter).subscribe((cards) => {
+        this.jobListData = cards;
+      });
+    } else {
+      console.log('inside else: ', filter.length);
+      this.jobListService.getJobListData().subscribe((data) => {
+        this.jobListData = data;
+      });
+    }
   }
 }

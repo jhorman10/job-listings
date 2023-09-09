@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -6,11 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./filter.component.scss'],
 })
 export class FilterComponent {
+  @Input() tools: string[] = [];
+  @Output() filterRemoved = new EventEmitter<string[]>();
   clear: string = 'Clear';
 
-  tools: string[] = ['Fronten','JavaScript','Senior'];
+  removeFilterItem(filter: string) {
+    this.tools = this.tools.filter((item) => item !== filter);
+    this.filterRemoved.emit(this.tools);
+  }
 
   clearFilters() {
-    console.log('Clear filters');
+    this.tools = [];
+    this.filterRemoved.emit(this.tools);
   }
 }
