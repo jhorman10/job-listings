@@ -1,6 +1,7 @@
 @import "../../../styles";
 
 .card-container {
+  background-color: white;
   width: 80vw;
   box-sizing: border-box;
   display: flex;
@@ -11,8 +12,9 @@
   gap: 20px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 5px 8px 20px 2px $desaturated-dark-cyan;
+  box-shadow: 5px 8px 20px 2px $desaturated-dark-cyan-o;
 }
+
 .card-container-part-1 {
   display: flex;
   flex-direction: row;
@@ -51,7 +53,7 @@
   border-radius: 15px;
 }
 .featured {
-  border-left: 3px solid $desaturated-dark-cyan;
+  border-left: 5px solid $desaturated-dark-cyan;
 }
 .company-job-title {
   cursor: pointer;
@@ -78,7 +80,7 @@
   gap: 20px;
 }
 .tools-languages {
-  background-color: #f1fafa;
+  background-color:$desaturated-dark-cyan-o;
   padding: 7px;
   color: $desaturated-dark-cyan;
   border-radius: 5px;
@@ -97,7 +99,7 @@
     font-size: 15px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 25px;
   }
 
   .card-container-part-1,
@@ -105,6 +107,18 @@
     flex-direction: column;
     gap: 10px;
   }
+
+  .img-company-card {
+    margin-top: -40px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .divider-tools-languages {
+    width: 100%;
+    border-top: 1px solid $dark-grayish-cyan;
+  }
+
   .company-name {
     gap: 10px;
   }

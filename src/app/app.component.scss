@@ -12,3 +12,18 @@
   background-color: $light-grayish-cyan-background;
   padding-top: 150px;
 }
+
+@media (max-width: 768px) {
+  .job-list-container{
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: $light-grayish-cyan-background;
+    padding-top: 250px;
+  }
+}
