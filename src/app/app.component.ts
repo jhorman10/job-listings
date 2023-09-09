@@ -32,7 +32,6 @@ export class AppComponent {
         this.jobListData = cards;
       });
     } else {
-      console.log('inside else: ', filter.length);
       this.jobListService.getJobListData().subscribe((data) => {
         this.jobListData = data;
       });
