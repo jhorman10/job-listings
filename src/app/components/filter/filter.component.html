@@ -1,8 +1,7 @@
 <div class="tools-lang-filter-container">
   <div class="filter-items-container">
-    <app-filter-item *ngFor="let tool of tools"  [filter]="tool"></app-filter-item>
+    <app-filter-item *ngFor="let tool of tools" [filter]="tool" (filterRemoved)="removeFilterItem($event)"></app-filter-item>
   </div>
-  <!-- <input class="tools-lang-filter-input" type="text" /> -->
   <button type="button" class="clear-button" (click)="clearFilters()">
     {{ clear }}
   </button>
