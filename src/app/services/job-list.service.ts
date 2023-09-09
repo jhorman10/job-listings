@@ -11,4 +11,8 @@ export class JobListService {
   getJobListData(): Observable<Card[]> {
     return this.http.get<Card[]>('../../assets/data/data.json');
   }
+
+  getCategoryListData(): Observable<Card[]> {
+    return this.http.get<Card[]>('../../assets/data/categories.json');
+  }
 }

@@ -1,0 +1,18 @@
+[
+  { "id": "Frontend", "category": "Frontend" },
+  { "id": "Backend", "category": "Backend" },
+  { "id": "Fullstack", "category": "Fullstack" },
+  { "id": "Junior", "category": "Junior" },
+  { "id": "Midweight", "category": "Midweight" },
+  { "id": "Senior", "category": "Senior" },
+  { "id": "Python", "category": "Python" },
+  { "id": "Ruby", "category": "Ruby" },
+  { "id": "JavaScript", "category": "JavaScript" },
+  { "id": "HTML", "category": "HTML" },
+  { "id": "CSS", "category": "CSS" },
+  { "id": "React", "category": "React" },
+  { "id": "Sass", "category": "Sass" },
+  { "id": "Vue", "category": "Vue" },
+  { "id": "Django", "category": "Django" },
+  { "id": "RoR", "category": "RoR (Ruby on Rails)" }
+]
