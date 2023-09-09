@@ -1,0 +1,14 @@
+@import '../styles';
+
+.job-list-container{
+  position: relative;
+  top: 150px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: $light-grayish-cyan-background;
+}
