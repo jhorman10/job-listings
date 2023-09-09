@@ -1,6 +1,8 @@
 @import '../styles';
 
 .job-list-container{
+  box-sizing: border-box;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;

@@ -1,4 +1,4 @@
-<div class="card-container">
+<div [ngClass]="cardData.featured ? 'featured' : ''" class="card-container">
   <div class="card-container-part-1">
     <img class="img-company-card" src="{{ cardData.logo }}" alt="" srcset="" />
     <div class="container-company-description">
