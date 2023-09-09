@@ -1,7 +1,35 @@
-.tools-lang-filter-container{
+@import '../../../styles';
 
-  .tools-lang-filter-input{
+.tools-lang-filter-container {
+  width: 77vw;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 8px 20px 2px $desaturated-dark-cyan;
 
+  .filter-items-container{
+    display: flex;
+    gap: 10px;
   }
 
+  .tools-lang-filter-input {
+    cursor:text;
+    font-size: 15px;
+    width: 50vw;
+    padding: 5px;
+    border: none;
+  }
+
+  .clear-button{
+    border: none;
+    background-color: white;
+    color: $desaturated-dark-cyan;
+    font-size: 15px;
+  }
 }

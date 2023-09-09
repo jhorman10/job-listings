@@ -8,13 +8,15 @@ import { CardComponent } from './components/card/card.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { JobListService } from './services/job-list.service';
 import { HeaderComponent } from './components/header/header.component';
+import { FilterItemComponent } from './components/filter-item/filter-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     FilterComponent,
-    HeaderComponent
+    HeaderComponent,
+    FilterItemComponent
   ],
   imports: [
     BrowserModule,
